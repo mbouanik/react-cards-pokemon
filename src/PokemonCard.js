@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import "./PokemonCard.css";
-import useToggleCard from "./hooks/useToggleCard";
+import useFlip from "./hooks/useFlip";
 
 /* Renders a single pokemon card. */
 function PokemonCard({ front, back, name, stats }) {
-  const [isFacingUp, flipCard] = useToggleCard(true);
+  const [isFacingUp, flipCard] = useFlip(true);
   // const flipCard = () => {
   //   setIsFacingUp(isUp => !isUp);
   // };

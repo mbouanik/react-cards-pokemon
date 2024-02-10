@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const useToggleCard = (val = true) => {
+const useFlip = (val = true) => {
   const [state, setState] = useState(val);
   const flipCard = () => {
     setState((card) => !card);
@@ -9,4 +9,4 @@ const useToggleCard = (val = true) => {
   return [state, flipCard];
 };
 
-export default useToggleCard;
+export default useFlip;
